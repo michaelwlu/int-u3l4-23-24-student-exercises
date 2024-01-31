@@ -23,18 +23,23 @@ let image = document.querySelector('.image');
 
 contentButton.addEventListener('click', function() {
   myName.innerHTML = "Michael";
+  myHobby.innerHTML = "Watching movies";
+  myLocation.innerHTML = "San Francisco";
 });
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
 
-
-
-
+image1Button.addEventListener("click", function() {
+  image.src = "https://wwwimage-us.pplusstatic.com/thumbnails/photos/w370-q80/movie_asset/15/33/69/mg_salone_poster_1400x2100.jpg"
+})
 
 // 5. Add an event listener to the `image2Button`
 // 6. When clicked, it should change the source of `image` to another image URL.
 
+image2Button.addEventListener("click", function() {
+  image.src = "https://lumiere-a.akamaihd.net/v1/images/p_disneymovies_avatarthewayofwater_streamingupdate_2096_0908fa1b.jpeg"
+})
 
 // BONUS
 // 7. Try using different event types for your buttons.
